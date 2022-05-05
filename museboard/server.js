@@ -7,8 +7,9 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/api/hello', (req, res) => {
-  res.send({ hello: "waddup" });
+app.post('/api/login', (req, res) => {
+  res.send({ hello: req.body.post, message: "login success" });
+  console.log("hello??")
 });
 
 app.post('/api/world', (req, res) => {

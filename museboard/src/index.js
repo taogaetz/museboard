@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import App from './App';
-import LoginPage from './routes/LoginPage';
+import LoginPage from './routes/LoginPage'
+import Splash from './routes/Splash'
+import Boards from './routes/Boards';
+import Board from './routes/Board';
+
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
@@ -16,8 +21,11 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' element={<App />} />
+        <Route path='/' element={<Splash />} />
         <Route path='/login' element={<LoginPage />}/>
+        <Route path='/home' element={<App />}/>
+        <Route path='/b' element={<Boards />}/>
+        <Route path='/b/:boardID' element={<Board />}/>
       </Routes>
     </Router>
   </React.StrictMode>

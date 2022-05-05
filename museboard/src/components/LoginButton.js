@@ -4,14 +4,10 @@ import { Link } from "react-router-dom";
 
 
 
-const LoginButton = () => {
+export default function LoginButton () {
   return (<>
-    <Link to="/login">click me to Login!</Link>
+    <Link to="/login">Enter</Link>
   </>)
 }
 
 
-
-export {
-  LoginButton, 
-};

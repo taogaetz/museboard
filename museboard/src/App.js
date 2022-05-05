@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import Header from './components/header';
-import React from "react";
+import React from "react"
+import styled from "styled-components";
+import Header from "./components/Header";
+
+import { Link } from "react-router-dom";
 import './App.css';
-import {LoginButton} from './components/LoginButton.js';
+
+
+
+
 
 function App() {
-  return ( <>
-      <h1>Welcome to the Party...</h1>
-      <LoginButton/>
-      </>);
+  return <>
+  <Header name="MuseBoard"/>
+  <Link to={'/b'}>Click here for Boards</Link>
+  </>
 }
 
 export default App;
