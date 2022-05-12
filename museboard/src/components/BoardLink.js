@@ -29,3 +29,5 @@ export default function BoardLink (props) {
   </>
 }
 
+export {BoardButtonWrapper}
+
