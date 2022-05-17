@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from "react";
 import { Link } from "react-router-dom";
 
 
@@ -12,9 +11,7 @@ const Logout = styled(Link)`
   top: 8px;
 `
 
-
 const Header = (props) => {
-
   return (<>
     <Logout to={'/'}>Logout</Logout>
     <MyHeaderWrapper>{`${props.name}`}</MyHeaderWrapper>

@@ -14,10 +14,10 @@ export default function Boards () {
   return <>
     <Header name="Boards"></Header>
     <BoardsWrapper>
-      <BoardLink boardID="g" BoardName="General" />
-      <BoardLink boardID="m" BoardName="Music" />
-      <BoardLink boardID="p" BoardName="Paint" />
-      <BoardLink boardID="s" BoardName="Spaces" />
+      <BoardLink boardID="general" BoardName="General" />
+      <BoardLink boardID="music" BoardName="Music" />
+      <BoardLink boardID="paint" BoardName="Paint" />
+      <BoardLink boardID="space" BoardName="Spaces" />
       </BoardsWrapper>
       <TestButton/>
   </>

@@ -2,23 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import App from './App.js';
-import LoginPage from './routes/LoginPage.jsx'
-import Splash from './routes/Splash.jsx'
-import Font from './routes/Splash.jsx'
-import Boards from './routes/Boards.jsx';
-import Board from './routes/Board.jsx';
+import App from './App';
+import LoginPage from './routes/LoginPage'
+import Splash from './routes/Splash'
+import Boards from './routes/Boards';
+import Board from './routes/Board';
 
-import reportWebVitals from './reportWebVitals.js';
+import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
 } from "react-router-dom";
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
